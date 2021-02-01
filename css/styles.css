@@ -321,18 +321,21 @@ a.link.current::after {
   background-color: var(--modal-bg-color);
 }
 
+/* close-button */
 .modal-button{
   position: absolute;
   top: 14px;
   right: 14px;
-
+  
   width: 30px;
   height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius:50% ;
 }
-
-
 
 
 /* advantages */
