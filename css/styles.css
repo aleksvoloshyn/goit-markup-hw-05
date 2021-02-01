@@ -294,6 +294,7 @@ a.link.current::after {
 
 .backdrop {
   position: fixed;
+  z-index: 2;
   top: 0;
   left: 0;
   width: 100%;
@@ -389,6 +390,7 @@ a.link.current::after {
 /* what-we-do-label */
 .what-we-do-thumb {
   position: relative;
+  z-index: 1;
 }
 
 .what-we-do-label {
