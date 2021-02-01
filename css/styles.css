@@ -11,6 +11,7 @@
   --second-bg-color: #2f303a;
   --third-bg-color: #F5F4FA;
   --hero-gredient: rgba(47, 48, 58, 0.4);
+  --what-we-do-gredient: rgba(47, 48, 58, 0.8);
   --filter-btn-bg-color: #F5F4FA;
   --icons-bg: rgba(255, 255, 255, 0.1);
 
@@ -19,16 +20,16 @@
   --normal-font-size: 14px;
 
   --logo-color: #AFB1B8;
-  
+
   --header-border-color: #ECECEC;
 
   --button-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-  0px 1px 2px rgba(0, 0, 0, 0.08),
-  0px 2px 2px rgba(0, 0, 0, 0.12);
+    0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 
   --portfolio-card-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-  0px 4px 4px rgba(0, 0, 0, 0.06),
-  1px 4px 6px rgba(0, 0, 0, 0.16);
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 
 }
 
@@ -126,8 +127,8 @@ p {
 }
 
 /* header */
-.bordered-header{
-  border-bottom: 1px solid var(--header-border-color) ;
+.bordered-header {
+  border-bottom: 1px solid var(--header-border-color);
 }
 
 .page-header .list a:hover,
@@ -162,12 +163,13 @@ p {
   padding-bottom: 32px;
 }
 
-.link.current{
+.link.current {
   position: relative;
 }
+
 /* подчеркивание под текущей ссылкой */
-a.link.current::after{
-  position:absolute;
+a.link.current::after {
+  position: absolute;
   bottom: 0;
   left: 0;
 
@@ -215,12 +217,12 @@ a.link.current::after{
   letter-spacing: 0.02em;
 }
 
-.contacts-logo{
+.contacts-logo {
   margin-right: 10px;
 }
 
 .mail,
-.phone{
+.phone {
   fill: currentColor;
 }
 
@@ -240,7 +242,7 @@ a.link.current::after{
     url(../images/studio/ourteam.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  
+
 }
 
 .hero-content {
@@ -306,7 +308,7 @@ a.link.current::after{
   margin-left: 30px;
 }
 
-.advantages-logos{
+.advantages-logos {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -332,6 +334,30 @@ a.link.current::after{
 .clients-title {
   margin-bottom: 50px;
 }
+
+/* what-we-do-label */
+.what-we-do-thumb {
+  position: relative;
+}
+
+.what-we-do-label {
+  position: absolute;
+
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 70px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--whitecolor);
+  background-color: var(--what-we-do-gredient);
+}
+
 
 /* our team */
 .our-team {
@@ -409,9 +435,7 @@ a.client-link {
   border-radius: 4px;
 }
 
-svg.clients-icon {
-  
-}
+svg.clients-icon {}
 
 a.client-link:hover,
 a.client-link:focus {
@@ -578,8 +602,8 @@ a.social-link:focus {
   /* outline: 1px solid green; */
 }
 
-.portfolio-items a:hover, 
-.portfolio-items a:focus{
+.portfolio-items a:hover,
+.portfolio-items a:focus {
   box-shadow: var(--portfolio-card-shadow);
 }
 
