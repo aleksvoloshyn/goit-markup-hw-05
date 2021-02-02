@@ -19,7 +19,7 @@
   --modal-bg-color:#FFFFFF;
 
   --border-color-portfolio: #EEEEEE;
-
+  --porfolio-card-hover: rgba(33, 150, 243, 0.9);
   --normal-font-size: 14px;
 
   --logo-color: #AFB1B8;
@@ -684,4 +684,49 @@ a.social-link:focus {
   color: var(--text-color);
   font-size: 16px;
   line-height: 1.88;
+}
+
+/* 2nd layer hover*/
+
+.potfolio-items-thumb{
+  position: relative;
+}
+
+.potfolio-items-thumb::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+
+  background-color: var(--porfolio-card-hover);  
+  opacity: 0;
+}
+
+.portfolio-items-meta{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 322px;
+
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.56;
+  color: var(--whitecolor);
+  opacity: 0;
+}
+
+.portfolio-items-link:hover .potfolio-items-thumb::before,
+.portfolio-items-link:hover .portfolio-items-meta{
+  opacity: 1;
+}
+
+.portfolio-items-link:focus .potfolio-items-thumb::before,
+.portfolio-items-link:focus .portfolio-items-meta {
+  opacity: 1;
 }
