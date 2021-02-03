@@ -359,6 +359,10 @@ a.link.current::after {
 }
 
 /* advantages */
+.advantages{
+  padding-bottom: 0;
+}
+
 .advantages .title {
   display: none;
 }
