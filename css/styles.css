@@ -359,7 +359,7 @@ a.link.current::after {
 }
 
 /* advantages */
-.advantages{
+.advantages {
   padding-bottom: 0;
 }
 
@@ -720,53 +720,31 @@ a.social-link:focus {
   align-items: center;
 }
 
-.potfolio-items-thumb::before {
+
+.overlay {
+  border: 1px dotted saddlebrown;
   position: absolute;
   top: 0;
   left: 0;
-
-  content: "";
-  display: inline-block;
   width: 100%;
   height: 100%;
 
-  background-color: var(--porfolio-card-hover);
-  opacity: 0;
-
-  transform: translatey(100%);
-
-  transition: transform var(--transition-cubic-primary);
-
-
-}
-
-.portfolio-items-meta {
-  position: absolute;
-  /* top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
-
-  width: 322px;
+  padding: 63px 24px;
 
   font-size: 18px;
   font-weight: 400;
   line-height: 1.56;
   color: var(--whitecolor);
+  background-color: var(--porfolio-card-hover);
+  
   opacity: 0;
-
   transform: translatey(100%);
   transition: transform var(--transition-cubic-primary);
 }
 
-.portfolio-items-link:hover .potfolio-items-thumb::before,
-.portfolio-items-link:hover .portfolio-items-meta {
-  opacity: 1;
 
-  transform: translatey(0);
-}
-
-.portfolio-items-link:focus .potfolio-items-thumb::before,
-.portfolio-items-link:focus .portfolio-items-meta {
+.portfolio-items-link:hover .overlay,
+.portfolio-items-link:focus .overlay {
   opacity: 1;
 
   transform: translatey(0);
