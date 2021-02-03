@@ -156,7 +156,7 @@ a.social-link,
 }
 
 /* site-nav */
-.nav-wrapper{
+.nav-wrapper {
   display: flex;
 }
 
@@ -402,22 +402,27 @@ a.link.current::after {
   z-index: 1;
 }
 
-.what-we-do-label {
+.what-we-do-textwrapper {
   position: absolute;
-
   bottom: 0;
   left: 0;
 
+  display: flex;
+  justify-content: center;
+
   width: 100%;
   height: 70px;
+
   padding-top: 27px;
   padding-bottom: 27px;
 
+  background-color: var(--what-we-do-gredient);
+}
+
+.what-we-do-label {
   font-weight: 700;
-  text-align: center;
   text-transform: uppercase;
   color: var(--whitecolor);
-  background-color: var(--what-we-do-gredient);
 }
 
 /* our team */
@@ -711,7 +716,7 @@ a.social-link:focus {
   line-height: 1.56;
   color: var(--whitecolor);
   background-color: var(--porfolio-card-hover);
-  
+
   opacity: 0;
   transform: translatey(100%);
   transition: transform var(--transition-cubic-primary);
