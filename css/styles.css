@@ -116,16 +116,11 @@ p {
   margin-bottom: 0;
 }
 
-
-
-
-
 .container {
   margin: 0 auto;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  /* text-align: center; */
   /* outline: 1px solid firebrick; */
 }
 
@@ -160,8 +155,11 @@ a.social-link,
     box-shadow var(--transition-cubic-primary)
 }
 
-
 /* site-nav */
+.nav-wrapper{
+  display: flex;
+}
+
 .site-nav {
   display: flex;
   align-items: center;
@@ -174,10 +172,6 @@ a.social-link,
 .site-nav-pages .item:not(:last-child) {
   margin-right: 50px;
 }
-
-/* .site-nav-pages .item + .item{
-  margin-left: 50px;
-} */
 
 .site-nav .link {
   display: flex;
@@ -219,18 +213,13 @@ a.link.current::after {
 .contacts {
   display: flex;
   margin-left: auto;
-}
-
-/* .contacts .mail, .contacts .phone{
-  display: flex;
   align-items: center;
-} */
-
-.contacts .item+.item {
-  margin-left: 50px;
 }
 
 /* всем у кого сверху по-соседству класс item */
+.contacts .item+.item {
+  margin-left: 50px;
+}
 
 /* site navigation */
 .site-nav,
@@ -265,7 +254,6 @@ a.link.current::after {
     url(../images/studio/ourteam.jpg);
   background-repeat: no-repeat;
   background-position: center;
-
 }
 
 .hero-content {
@@ -311,7 +299,6 @@ a.link.current::after {
 }
 
 /* modal window */
-
 .backdrop {
   position: fixed;
   z-index: 2;
@@ -334,7 +321,6 @@ a.link.current::after {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
 
   width: 528px;
   height: 581px;
@@ -434,7 +420,6 @@ a.link.current::after {
   background-color: var(--what-we-do-gredient);
 }
 
-
 /* our team */
 .our-team {
   padding-top: 94px;
@@ -491,7 +476,6 @@ li.client-list-item {
 
   width: 170px;
   height: 90px;
-
 }
 
 li.client-list-item:not(:last-child) {
@@ -553,7 +537,6 @@ a.client-link:focus {
 .footer-address {
   margin-right: 70px;
 }
-
 
 .footer-social {
   width: 206px;
@@ -634,8 +617,6 @@ a.social-link:focus {
   line-height: 1.63;
   text-align: center;
 
-
-
   border: 0;
   border-radius: 4px;
   min-width: 73px;
@@ -671,11 +652,6 @@ a.social-link:focus {
   margin: 15px;
 
   border: 1px solid var(--border-color-portfolio);
-
-  /* width: calc((100%-60px)/3); */
-  /* margin-right: 30px;
-  margin-bottom: 30px; */
-  /* outline: 1px solid green; */
 }
 
 .portfolio-items a:hover,
@@ -710,7 +686,6 @@ a.social-link:focus {
 }
 
 /* 2nd layer hover*/
-
 .potfolio-items-thumb {
   position: relative;
   overflow: hidden;
@@ -722,7 +697,7 @@ a.social-link:focus {
 
 
 .overlay {
-  border: 1px dotted saddlebrown;
+  /* border: 1px dotted saddlebrown; */
   position: absolute;
   top: 0;
   left: 0;
@@ -746,6 +721,5 @@ a.social-link:focus {
 .portfolio-items-link:hover .overlay,
 .portfolio-items-link:focus .overlay {
   opacity: 1;
-
   transform: translatey(0);
 }
